@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AUTOFORÇA | Oficina Mecânica Multimarcas</title>
+<meta name="description" content="Manutenção preventiva, mecânica geral, elétrica e diagnóstico computadorizado com profissionais qualificados e 1 ano de garantia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  fontFamily: { sans: ['Poppins', 'system-ui', 'sans-serif'] },
+  colors: { brand: '#F97316', brand2: '#EA580C', gold: '#FACC15', ink: '#1F2937', slate2: '#111827' }
+}}}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  summary { list-style: none; cursor: pointer; }
+  summary::-webkit-details-marker { display: none; }
+  details[open] .plus { transform: rotate(45deg); }
+  .plus { transition: transform .2s; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .plus { transition: none; } }
+  :focus-visible { outline: 3px solid #F97316; outline-offset: 2px; }
+</style>
+</head>
+<body class="font-sans text-ink bg-white antialiased">
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-5 h-20 flex items-center justify-between">
+    <a href="#inicio" class="flex items-center gap-3" aria-label="AUTOFORÇA Oficina Mecânica">
+      <span class="w-11 h-11 rounded-xl bg-brand text-white grid place-items-center text-xl">🔧</span>
+      <span class="leading-tight"><span class="block font-extrabold text-xl tracking-tight">AUTO<span class="text-brand">FORÇA</span></span><span class="block text-xs text-gray-500">Oficina Mecânica</span></span>
+    </a>
+    <nav class="hidden lg:flex gap-8 text-sm font-medium" aria-label="Principal">
+      <a href="#inicio" class="text-brand border-b-2 border-brand pb-1">Início</a>
+      <a href="#servicos" class="hover:text-brand">Serviços</a>
+      <a href="#sobre" class="hover:text-brand">Sobre Nós</a>
+      <a href="#depoimentos" class="hover:text-brand">Depoimentos</a>
+      <a href="#contato" class="hover:text-brand">Contato</a>
+    </nav>
+    <a href="#contato" class="hidden sm:inline-block bg-brand hover:bg-brand2 text-white font-semibold text-sm px-6 py-3 rounded-lg">📅 Agende Seu Horário</a>
+    <button id="menuBtn" class="lg:hidden p-2 text-2xl" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  </div>
+  <nav id="mobileMenu" class="hidden lg:hidden border-t border-gray-100 px-5 py-4 flex flex-col gap-3 text-sm font-medium bg-white">
+    <a href="#servicos">Serviços</a><a href="#sobre">Sobre Nós</a><a href="#depoimentos">Depoimentos</a><a href="#contato">Contato</a>
+    <a href="#contato" class="bg-brand text-white text-center font-semibold px-5 py-3 rounded-lg">Agende Seu Horário</a>
+  </nav>
+</header>
+
+<main>
+<!-- HERO (1 de 3) -->
+<section id="inicio" class="bg-gradient-to-br from-white to-orange-50">
+  <div class="max-w-7xl mx-auto px-5 py-14 lg:py-20 grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <span class="inline-block bg-gold/30 text-ink text-sm font-medium px-4 py-1.5 rounded-full mb-6">⚡ Oficina Multimarcas Especializada</span>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.1] tracking-tight">Cuidado de <span class="text-brand">confiança</span> para o seu carro, sem complicações</h1>
+      <p class="mt-6 text-gray-600 text-lg max-w-xl">Manutenção preventiva, mecânica geral, elétrica e diagnóstico computadorizado com profissionais qualificados e garantia de serviço.</p>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a href="#contato" class="bg-brand hover:bg-brand2 text-white font-semibold px-7 py-4 rounded-lg">📅 Agendar Manutenção</a>
+        <a href="#servicos" class="border-2 border-ink/80 hover:bg-ink hover:text-white font-semibold px-7 py-4 rounded-lg transition">Ver Serviços →</a>
+      </div>
+      <div class="mt-8 flex items-center gap-4">
+        <div class="flex -space-x-3" aria-hidden="true">
+          <span class="w-10 h-10 rounded-full bg-slate-600 border-2 border-white grid place-items-center">👨</span>
+          <span class="w-10 h-10 rounded-full bg-orange-300 border-2 border-white grid place-items-center">👩</span>
+          <span class="w-10 h-10 rounded-full bg-slate-400 border-2 border-white grid place-items-center">🧔</span>
+          <span class="w-10 h-10 rounded-full bg-ink text-white text-xs border-2 border-white grid place-items-center">+997</span>
+        </div>
+        <p class="text-sm"><span class="text-gold text-lg">★★★★★</span><br><strong>4,9/5</strong> de +1000 clientes satisfeitos no Google</p>
+      </div>
+    </div>
+    <!-- Troque o bloco abaixo por <img src="img/oficina.jpg" alt="..."> quando tiver a foto real -->
+    <div class="relative h-[420px] lg:h-[520px] rounded-3xl bg-gradient-to-br from-slate2 via-slate-700 to-slate-500 overflow-hidden grid place-items-center shadow-2xl" role="img" aria-label="Oficina com SUV no elevador e mecânico inspecionando o motor">
+      <span class="text-[10rem] opacity-90">🚙</span>
+      <span class="absolute top-6 right-6 bg-white rounded-xl shadow-lg px-4 py-3 text-sm font-semibold">🛡️ Garantia de 1 ano<br><span class="font-normal text-gray-500">nos serviços</span></span>
+      <span class="absolute bottom-6 left-6 bg-white rounded-xl shadow-lg px-4 py-3 text-sm font-semibold">⚙️ Peças Originais</span>
+    </div>
+  </div>
+  <div class="border-t border-gray-200 bg-white">
+    <ul class="max-w-7xl mx-auto px-5 py-6 grid grid-cols-2 lg:grid-cols-4 gap-5 text-sm">
+      <li class="flex items-center gap-3"><span class="text-2xl">🛡️</span><span class="font-medium">Profissionais<br>Qualificados</span></li>
+      <li class="flex items-center gap-3"><span class="text-2xl">⚙️</span><span class="font-medium">Equipamentos de<br>Última Geração</span></li>
+      <li class="flex items-center gap-3"><span class="text-2xl">🤝</span><span class="font-medium">Transparência<br>em Todo o Processo</span></li>
+      <li class="flex items-center gap-3"><span class="text-2xl">⏱️</span><span class="font-medium">Atendimento<br>Ágil e Personalizado</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- SERVIÇOS (2 de 3) -->
+<section id="servicos" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="text-center max-w-2xl mx-auto">
+      <p class="text-brand font-semibold text-sm">Nossos Serviços</p>
+      <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold tracking-tight">Soluções completas <span class="text-brand">para o seu veículo</span></h2>
+    </div>
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <a href="#contato" class="group flex items-start gap-4 p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition">
+        <span class="w-14 h-14 shrink-0 rounded-xl bg-orange-50 grid place-items-center text-2xl">🔧</span>
+        <span class="flex-1"><strong class="block">Mecânica Geral</strong><span class="text-sm text-gray-500">Revisões, suspensão, freios, embreagem e motor.</span></span>
+        <span class="w-8 h-8 shrink-0 rounded-full bg-orange-50 text-brand grid place-items-center group-hover:bg-brand group-hover:text-white">→</span>
+      </a>
+      <a href="#contato" class="group flex items-start gap-4 p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition">
+        <span class="w-14 h-14 shrink-0 rounded-xl bg-orange-50 grid place-items-center text-2xl">💻</span>
+        <span class="flex-1"><strong class="block">Diagnóstico Computadorizado</strong><span class="text-sm text-gray-500">Identificação rápida e precisa de falhas eletrônicas.</span></span>
+        <span class="w-8 h-8 shrink-0 rounded-full bg-orange-50 text-brand grid place-items-center group-hover:bg-brand group-hover:text-white">→</span>
+      </a>
+      <a href="#contato" class="group flex items-start gap-4 p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition">
+        <span class="w-14 h-14 shrink-0 rounded-xl bg-orange-50 grid place-items-center text-2xl">📋</span>
+        <span class="flex-1"><strong class="block">Revisão Preventiva</strong><span class="text-sm text-gray-500">Segurança para sua viagem e o dia a dia.</span></span>
+        <span class="w-8 h-8 shrink-0 rounded-full bg-orange-50 text-brand grid place-items-center group-hover:bg-brand group-hover:text-white">→</span>
+      </a>
+      <a href="#contato" class="group flex items-start gap-4 p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition">
+        <span class="w-14 h-14 shrink-0 rounded-xl bg-orange-50 grid place-items-center text-2xl">⚙️</span>
+        <span class="flex-1"><strong class="block">Injeção Eletrônica</strong><span class="text-sm text-gray-500">Limpeza de bicos, regulagem e otimização do consumo.</span></span>
+        <span class="w-8 h-8 shrink-0 rounded-full bg-orange-50 text-brand grid place-items-center group-hover:bg-brand group-hover:text-white">→</span>
+      </a>
+      <a href="#contato" class="group flex items-start gap-4 p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition">
+        <span class="w-14 h-14 shrink-0 rounded-xl bg-orange-50 grid place-items-center text-2xl">🛞</span>
+        <span class="flex-1"><strong class="block">Alinhamento e Balanceamento</strong><span class="text-sm text-gray-500">Desgaste uniforme e estabilidade ao dirigir.</span></span>
+        <span class="w-8 h-8 shrink-0 rounded-full bg-orange-50 text-brand grid place-items-center group-hover:bg-brand group-hover:text-white">→</span>
+      </a>
+      <a href="#contato" class="group flex items-start gap-4 p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition">
+        <span class="w-14 h-14 shrink-0 rounded-xl bg-orange-50 grid place-items-center text-2xl">❄️</span>
+        <span class="flex-1"><strong class="block">Elétrica e Climatização</strong><span class="text-sm text-gray-500">Bateria, alternador, fiação e recarga de ar-condicionado.</span></span>
+        <span class="w-8 h-8 shrink-0 rounded-full bg-orange-50 text-brand grid place-items-center group-hover:bg-brand group-hover:text-white">→</span>
+      </a>
+    </div>
+    <div class="mt-10 text-center"><a href="#contato" class="inline-block border-2 border-ink/80 hover:bg-ink hover:text-white font-semibold px-7 py-3 rounded-lg transition">Ver Todos os Serviços →</a></div>
+  </div>
+</section>
+
+<!-- POR QUE ESCOLHER -->
+<section id="sobre" class="bg-slate2 text-white">
+  <div class="max-w-7xl mx-auto px-5 py-20 grid lg:grid-cols-2 gap-12 items-center">
+    <div class="relative h-80 lg:h-96 rounded-3xl bg-gradient-to-br from-slate-700 to-slate-500 grid place-items-center overflow-hidden" role="img" aria-label="Mecânicos trabalhando em equipe na oficina">
+      <span class="text-9xl">👨‍🔧</span>
+      <span class="absolute bottom-5 left-5 bg-brand rounded-xl px-5 py-3 font-bold leading-tight">Mais de 15 anos<br><span class="font-medium text-sm">de experiência</span></span>
+    </div>
+    <div>
+      <p class="text-brand font-semibold text-sm">Sobre Nós</p>
+      <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold tracking-tight">Por que escolher a <span class="text-brand">AUTOFORÇA?</span></h2>
+      <p class="mt-4 text-gray-300 max-w-lg">Mais que uma oficina, somos parceiros na sua jornada. Unimos experiência, tecnologia e atendimento especializado para garantir a máxima segurança e desempenho do seu veículo.</p>
+      <ul class="mt-6 space-y-3">
+        <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-brand grid place-items-center text-xs">✓</span>Equipe certificada</li>
+        <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-brand grid place-items-center text-xs">✓</span>Garantia de 1 ano em peças e serviços</li>
+        <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-brand grid place-items-center text-xs">✓</span>Orçamento rápido e digital</li>
+      </ul>
+      <a href="#contato" class="mt-8 inline-block bg-brand hover:bg-brand2 font-semibold px-7 py-4 rounded-lg">👥 Conhecer Nossa História →</a>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS (3 de 3) -->
+<section id="depoimentos" class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="text-center">
+      <p class="text-brand font-semibold text-sm">Depoimentos</p>
+      <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold tracking-tight">Quem passa pela Autoforça, <span class="text-brand">recomenda</span></h2>
+    </div>
+    <div class="mt-12 grid md:grid-cols-3 gap-6">
+      <figure class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+        <figcaption class="flex items-center gap-3"><span class="w-12 h-12 rounded-full bg-slate-600 grid place-items-center text-xl">👨</span><span class="text-sm"><strong class="block">Thiago Silva</strong><span class="text-gray-500">Cliente há 2 anos</span></span><span class="ml-auto font-bold text-blue-600">G</span></figcaption>
+        <p class="mt-3 text-gold">★★★★★</p>
+        <blockquote class="mt-2 text-sm text-gray-600">Serviço impecável! Levei meu SUV para revisão, o diagnóstico foi rápido e o preço justo. Transparência total!</blockquote>
+      </figure>
+      <figure class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+        <figcaption class="flex items-center gap-3"><span class="w-12 h-12 rounded-full bg-orange-300 grid place-items-center text-xl">👩</span><span class="text-sm"><strong class="block">Mariana Costa</strong><span class="text-gray-500">Cliente satisfeita</span></span><span class="ml-auto font-bold text-blue-600">G</span></figcaption>
+        <p class="mt-3 text-gold">★★★★★</p>
+        <blockquote class="mt-2 text-sm text-gray-600">Melhor atendimento que já tive em oficina. O pessoal é muito atencioso, explicam tudo com paciência e não tentam empurrar serviços desnecessários.</blockquote>
+      </figure>
+      <figure class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+        <figcaption class="flex items-center gap-3"><span class="w-12 h-12 rounded-full bg-slate-400 grid place-items-center text-xl">🧔</span><span class="text-sm"><strong class="block">Roberto Oliveira</strong><span class="text-gray-500">Cliente há 1 ano</span></span><span class="ml-auto font-bold text-blue-600">G</span></figcaption>
+        <p class="mt-3 text-gold">★★★★★</p>
+        <blockquote class="mt-2 text-sm text-gray-600">Equipe extremamente qualificada. Resolveram um problema elétrico que nenhuma outra oficina resolveu. Recomendo de olhos fechados!</blockquote>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-12">
+    <div>
+      <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Ficou com alguma <span class="text-brand">dúvida?</span></h2>
+      <p class="mt-4 text-gray-600 max-w-sm">Confira as perguntas mais comuns dos nossos clientes ou entre em contato.</p>
+    </div>
+    <div class="divide-y divide-gray-200 border-y border-gray-200">
+      <details class="py-5"><summary class="flex justify-between items-center font-medium">Vocês atendem todas as marcas e modelos?<span class="plus text-2xl text-brand">+</span></summary><p class="mt-3 text-sm text-gray-600">Sim. Somos uma oficina multimarcas e atendemos veículos nacionais e importados.</p></details>
+      <details class="py-5"><summary class="flex justify-between items-center font-medium">Como funciona a garantia dos serviços?<span class="plus text-2xl text-brand">+</span></summary><p class="mt-3 text-sm text-gray-600">Todos os serviços e peças têm 1 ano de garantia, registrada na sua ordem de serviço.</p></details>
+      <details class="py-5"><summary class="flex justify-between items-center font-medium">Preciso agendar horário ou posso ir direto?<span class="plus text-2xl text-brand">+</span></summary><p class="mt-3 text-sm text-gray-600">Aceitamos os dois, mas o agendamento evita espera e garante atendimento mais ágil.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA / CONTATO -->
+<section id="contato" class="px-5 pb-20 bg-white">
+  <div class="max-w-7xl mx-auto rounded-3xl bg-gradient-to-r from-slate2 to-slate-700 text-white p-8 lg:p-12 grid lg:grid-cols-2 gap-10 items-center">
+    <div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Pronto para dar ao seu carro o cuidado que ele <span class="text-brand">merece?</span></h2>
+      <p class="mt-3 text-gray-300">Fale com nossos especialistas e agende sua revisão agora mesmo.</p>
+      <div class="mt-6 flex flex-wrap gap-4">
+        <a href="https://wa.me/5511987654321" target="_blank" rel="noopener" class="bg-brand hover:bg-brand2 font-semibold px-6 py-3 rounded-lg">💬 Fale Conosco no WhatsApp</a>
+        <a href="mailto:contato@autoforca.com.br" class="border-2 border-white/70 hover:bg-white hover:text-ink font-semibold px-6 py-3 rounded-lg transition">📅 Agendar pelo Site</a>
+      </div>
+    </div>
+    <div class="bg-white/10 rounded-2xl p-6 text-sm space-y-4">
+      <p><strong class="block">📍 Nosso Endereço</strong><span class="text-gray-300">Av. Principal, 1234 – São Paulo/SP</span></p>
+      <p><strong class="block">🕘 Horário</strong><span class="text-gray-300">Seg a Sex: 8h às 18h | Sáb: 8h às 12h</span></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-slate2 text-gray-300 text-sm">
+  <div class="max-w-7xl mx-auto px-5 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div><p class="font-extrabold text-xl text-white">AUTO<span class="text-brand">FORÇA</span></p><p class="mt-3 max-w-xs">Cuidado de confiança para o seu carro, sem complicações.</p></div>
+    <div><p class="font-semibold text-white mb-3">Links Úteis</p><ul class="space-y-2"><li><a href="#inicio" class="hover:text-brand">Início</a></li><li><a href="#servicos" class="hover:text-brand">Serviços</a></li><li><a href="#sobre" class="hover:text-brand">Sobre Nós</a></li><li><a href="#depoimentos" class="hover:text-brand">Depoimentos</a></li></ul></div>
+    <div><p class="font-semibold text-white mb-3">Serviços</p><ul class="space-y-2"><li>Mecânica Geral</li><li>Diagnóstico</li><li>Revisão</li><li>Injeção Eletrônica</li></ul></div>
+    <div><p class="font-semibold text-white mb-3">Fale Conosco</p><ul class="space-y-2"><li>📞 (11) 98765-4321</li><li>✉️ contato@autoforca.com.br</li><li>📍 Av. Principal, 1234 – São Paulo/SP</li></ul></div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-5 py-5 flex flex-wrap justify-between gap-3 text-xs">
+      <p>© 2026 AUTOFORÇA Oficina Mecânica. Todos os direitos reservados.</p>
+      <p>Política de Privacidade &nbsp;|&nbsp; Termos de Uso</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const b = document.getElementById('menuBtn'), m = document.getElementById('mobileMenu');
+  b.addEventListener('click', () => { const o = m.classList.toggle('hidden') === false; b.setAttribute('aria-expanded', o); });
+  m.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { m.classList.add('hidden'); b.setAttribute('aria-expanded', 'false'); }));
+</script>
+</body>
+</html>
